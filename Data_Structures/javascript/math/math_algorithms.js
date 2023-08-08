@@ -86,3 +86,28 @@ console.log('Power of Two: ' + isPowerOfTwoBitWise(2))
 console.log('Power of Two: ' + isPowerOfTwoBitWise(5))
 
 // Recursion
+
+// Fibonacci sequence
+function recursiveFibo(n){
+    if(n < 2){
+        return n
+    }
+    return recursiveFibo(n-1) + recursiveFibo(n-2)
+}
+
+console.log(recursiveFibo(6))
+// O(2^n)
+
+// Factorial
+
+function recursiveFactorial(n){
+    if(n == 0){
+        return 1
+    }
+    return n * recursiveFactorial(n-1)
+}
+
+console.log(recursiveFactorial(0))
+console.log(recursiveFactorial(1))
+console.log(recursiveFactorial(5))
+// O(n)
